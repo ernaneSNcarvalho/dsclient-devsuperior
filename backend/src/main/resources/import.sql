@@ -1,0 +1,10 @@
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Joao Bernardo', '111-111-111-11', 5500.00, TIMESTAMP WITH TIME ZONE '1976-07-13', 2);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Sebastiao Honorio', '222-222-222-22', 3500.00, TIMESTAMP WITH TIME ZONE '1976-07-13', 1);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Gisela Martins', '333-333-333-33', 1500.00, TIMESTAMP WITH TIME ZONE '1976-07-13', 1);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Josue Curvelo', '444-444-444-44', 2500.00, TIMESTAMP WITH TIME ZONE '1976-07-13', 1);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Rute Magalhaes', '555-555-555-55', 3500.00, TIMESTAMP WITH TIME ZONE '1976-07-13', 2);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Rose Nascimento', '666-666-666-66', 4500.00, TIMESTAMP WITH TIME ZONE '1976-07-13', 3);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Beatriz Camelo', '777-777-777-77', 6500.00, TIMESTAMP WITH TIME ZONE '1976-07-13', 4);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Rodrigo Silva', '888-888-888-88', 7500.00, TIMESTAMP WITH TIME ZONE '1976-07-13', 4);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Rafael Diniz', '999-999-999-99', 8500.00, TIMESTAMP WITH TIME ZONE '1976-07-13', 1);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Suelem Costa', '000-000-000-00', 9500.00, TIMESTAMP WITH TIME ZONE '1976-07-13', 0);
