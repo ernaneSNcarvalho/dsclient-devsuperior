@@ -3,6 +3,8 @@ package com.client.client.entities.services;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
@@ -11,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.client.client.dto.ClientDTO;
 import com.client.client.entities.Client;
 import com.client.client.repositories.ClientRepository;
+import com.client.client.resources.exceptions.DataBaseException;
 import com.client.client.resources.exceptions.ResourceNotFoundException;
 
 
@@ -60,5 +63,15 @@ public class ClientService {
 		entity.setIncome(dto.getIncome());
 		entity.setBirthDate(dto.getBirthDate());
 		entity.setChildren(dto.getChildren());
+	}
+
+	public void delete(Long id) {
+		try {
+			repository.deleteById(id);
+		}catch(EmptyResultDataAccessException e) {
+			throw new ResourceNotFoundException("Id not found.");
+		}catch(DataIntegrityViolationException e) {
+			throw new DataBaseException("Integrity Violation.");
+		}
 	}
 }
